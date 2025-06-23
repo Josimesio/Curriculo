@@ -1,15 +1,41 @@
+// Scroll Reveal
 document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('.section');
-
-  const revealOnScroll = () => {
+  const sections = document.querySelectorAll('.fade-in');
+  const reveal = () => {
     sections.forEach(section => {
-      const rect = section.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 100) {
+      if (section.getBoundingClientRect().top < window.innerHeight - 100) {
         section.classList.add('visible');
       }
     });
   };
+  window.addEventListener('scroll', reveal);
+  reveal();
+});
 
-  window.addEventListener('scroll', revealOnScroll);
-  revealOnScroll();
+// Matrix Effect
+const canvas = document.getElementById('matrix');
+const ctx = canvas.getContext('2d');
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const letters = Array(256).join("01").split("");
+const draw = () => {
+  ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "#0F0";
+  letters.map((y_pos, index) => {
+    const text = String.fromCharCode(3e4 + Math.random() * 33);
+    const x_pos = index * 10;
+    ctx.fillText(text, x_pos, y_pos);
+    letters[index] = (y_pos > 758 + Math.random() * 1e4) ? 0 : y_pos + 10;
+  });
+};
+
+setInterval(draw, 33);
+
+// Ajustar canvas ao redimensionar
+window.addEventListener('resize', () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
 });
