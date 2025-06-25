@@ -2,281 +2,177 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Currículo Hacker - Josimésio Rossini Pereira</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Profissional - Josimésio Rossini Pereira</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Share+Tech+Mono&display=swap');
-
-        body {
+        * {
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #0f0f1f, #001f33);
-            color: #00ffea;
-            font-family: 'Share Tech Mono', monospace;
-            overflow-x: hidden;
+            box-sizing: border-box;
         }
 
-        #matrixCanvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
         }
 
         header {
+            background: #1f2937;
+            color: #fff;
             text-align: center;
             padding: 40px 20px;
-            background: rgba(0, 30, 60, 0.9);
-            box-shadow: 0 0 20px #00ffea;
+        }
+
+        header img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid #3b82f6;
+            margin-top: 10px;
         }
 
         header h1 {
-            font-size: 3rem;
-            text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffa0;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
         }
 
         header p {
-            font-size: 1.2rem;
-            color: #00ffa0;
+            font-size: 1.1rem;
+            color: #9ca3af;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
         section {
-            max-width: 900px;
-            margin: 30px auto;
-            background: rgba(0, 20, 40, 0.85);
-            padding: 20px;
-            border-left: 4px solid #00ffea;
-            box-shadow: 0 0 10px #00ffea;
+            margin-bottom: 40px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
         }
 
         h2 {
-            border-bottom: 1px solid #00ffea;
+            margin-bottom: 20px;
+            color: #1f2937;
+            border-bottom: 2px solid #3b82f6;
+            display: inline-block;
             padding-bottom: 5px;
-            color: #00ffea;
-            margin-bottom: 15px;
         }
 
         ul {
             list-style-type: none;
-            padding: 0;
+            padding-left: 0;
         }
 
         ul li {
             margin-bottom: 10px;
         }
 
-        .neon {
-            color: #00ffea;
-            text-shadow: 0 0 5px #00ffea, 0 0 15px #00ffa0;
-        }
-
-        .section-content {
-            color: #00ffa0;
-        }
-
-        .foto-perfil {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid #00ffea;
-            box-shadow: 0 0 15px #00ffea, 0 0 30px #00ffa0;
-            margin-top: 20px;
-            object-fit: cover;
+        .highlight {
+            color: #3b82f6;
+            font-weight: 600;
         }
     </style>
 </head>
 
 <body>
-
-    <canvas id="matrixCanvas"></canvas>
-
     <header>
-        <h1 class="neon">Currículo - Josimésio Rossini Pereira</h1>
-        <img src="foto/Eu.jpg" alt="Foto de Josimésio" class="foto-perfil" />
-        <p>Analista de Desenvolvimento de Software | +18 anos de experiência | Especialista em Java, Python e Progress
-            4GL</p>
+        <h1>Josimésio Rossini Pereira</h1>
+        <img src="foto/Eu.jpg" alt="Foto de Josimésio">
+        <p>Analista de Desenvolvimento de Software | 18+ anos de experiência | Java, Python, Progress 4GL</p>
     </header>
 
-    <section>
-        <h2>Perfil Profissional</h2>
-        <p class="section-content">
-            Profissional com 18 anos de experiência em desenvolvimento de software, apaixonado por tecnologia e com
-            forte atuação em projetos complexos. Especialista em Java (14 anos), Python (6 anos) e Progress 4GL (18
-            anos). Perfil focado, objetivo, questionador e com visão tradicional aliada à inovação.
-        </p>
-    </section>
+    <main>
+        <section>
+            <h2>Perfil Profissional</h2>
+            <p>Profissional com vasta experiência em desenvolvimento de sistemas e liderança técnica. Foco em soluções
+                eficientes, com perfil analítico, questionador e com visão de futuro aliada à tradição.</p>
+        </section>
 
-    <section>
-        <h2>Competências Técnicas</h2>
-        <ul class="section-content">
-            <li>✅ Java - Desenvolvimento Backend e integrações corporativas</li>
-            <li>✅ Python - Scripts, automações e data analysis</li>
-            <li>✅ Progress 4GL - Sistemas legados de alta performance</li>
-            <li>✅ SQL - Consultas complexas e otimização de banco de dados</li>
-            <li>✅ MongoDB - Estruturação de bases NoSQL</li>
-            <li>✅ Spring Boot, Django e Web APIs RESTful</li>
-            <li>✅ React e desenvolvimento Frontend com foco em performance</li>
-            <li>✅ DevOps básico - Jenkins, Git, Docker</li>
-            <li>✅ Documentação Técnica, POPs e Modelagem de Processos</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Competências Técnicas</h2>
+            <ul>
+                <li><span class="highlight">Java:</span> Backend, integrações corporativas</li>
+                <li><span class="highlight">Python:</span> Scripts, automação, data analysis</li>
+                <li><span class="highlight">Progress 4GL:</span> Sistemas legados</li>
+                <li><span class="highlight">SQL / MongoDB:</span> Consultas, estruturação de dados</li>
+                <li><span class="highlight">Spring Boot, Django, APIs REST</span></li>
+                <li><span class="highlight">React:</span> Frontend performático</li>
+                <li><span class="highlight">DevOps:</span> Jenkins, Git, Docker</li>
+                <li><span class="highlight">Documentação:</span> POPs e processos</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Experiência Profissional</h2>
-        <ul class="section-content">
-            <li>
-                <strong>Analista de Desenvolvimento Sênior – Grupo Pluma (Atual)</strong><br>
-                <span>Período: 2021 – Atual</span><br>
-                Atuação estratégica como responsável técnico de TI no Programa de Migração de ERP (Programa Conecta),
-                incluindo:
-                <ul>
-                    <li>Liderança técnica  TI no Programa Conecta – responsável por apoiar key-users e consultores  da frente de Controladoria durante
-                        todas as fases da implantação e sustentação técnica do novo ERP</li>
-                    <li>Elaboração e implementação de POPs (Procedimentos Operacionais Padrão) para diferentes áreas da
-                        empresa</li>
-                    <li>Desenvolvimento de sistemas internos como Helpdesk, Portais de Comunicação e ferramentas de
-                        apoio à gestão de projetos</li>
-                    <li>Monitoramento e automação de processos corporativos utilizando Django e Python</li>
-                    <li>Documentação funcional e técnica dos processos no Oracle Fusion PPM</li>
-                    <li>Automação de relatórios gerenciais e desenvolvimento de integrações entre o novo ERP e sistemas
-                        satélites</li>
-                    <li>Atuação direta no suporte técnico de 2º nível para os usuários do ERP durante a fase de
-                        estabilização</li>
-                </ul>
-            </li>
+        <section>
+            <h2>Experiência Profissional</h2>
+            <ul>
+                <li>
+                    <strong>Grupo Pluma (2021 - Atual)</strong><br>
+                    Responsável técnico no Programa Conecta (migração de ERP Oracle Fusion). Criação de sistemas
+                    internos, POPs e automação com Python/Django.
+                </li>
+                <li>
+                    <strong>Empresa de Logística (2020 - 2022)</strong><br>
+                    Sistemas de gestão de frotas, BI logístico e integrações com controle de fretes.
+                </li>
+                <li>
+                    <strong>Consultoria de Software (2007 - 2016)</strong><br>
+                    Sistemas web corporativos com Java, APIs REST e integrações entre sistemas.
+                </li>
+                <li>
+                    <strong>Datacoper (2009 - 2020)</strong><br>
+                    ERP em Progress 4GL para setores agrícolas e financeiros.
+                </li>
+                <li>
+                    <strong>Software House (2005 - 2007)</strong><br>
+                    Desenvolvimento de ERP comercial em Progress 4GL.
+                </li>
+            </ul>
+        </section>
 
-            <li>
-                <strong>Analista de Sistemas – Empresa de Logística e Transporte (2020 – 2022)</strong><br>
-                <ul>
-                    <li>Desenvolvimento de sistemas de gestão de frotas e rastreamento de cargas</li>
-                    <li>Implementação de rotinas de BI para controle de KPIs logísticos</li>
-                    <li>Integrações com sistemas de roteirização e controle de fretes</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Programador Java – Consultoria de Software (2007 – 2016</strong><br>
-                <ul>
-                    <li>Desenvolvimento de sistemas web corporativos</li>
-                    <li>Criação de APIs REST usando Java EE e Spring</li>
-                    <li>Participação em projetos de integração entre sistemas de clientes</li>
-                    <li>Atuação em sustentação e correção de bugs em ambientes de produção</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Programador Progress 4GL – Datacoper (2009 – 2020)</strong><br>
-                Desenvolvimento de soluções para o ERP próprio da cooperativa, com foco em:
-                <ul>
-                    <li>Desenvolvimento de módulos ERP em Progress 4GL</li>
-                    <li>Criação de relatórios personalizados e otimizações de banco de dados</li>
-                    <li>Automação de processos agrícolas, financeiros e logísticos</li>
-                    <li>Interações com usuários chave para levantamento de requisitos</li>
-                    <li>Suporte de segundo nível para o ERP interno</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Desenvolvedor Progress 4GL – Software House (2005 – 2007)</strong><br>
-                <ul>
-                    <li>Criação de módulos para sistema ERP de gestão comercial</li>
-                    <li>Desenvolvimento de relatórios analíticos em Progress 4GL</li>
-                    <li>Suporte técnico direto ao cliente</li>
-                </ul>
-            </li>
+        <section>
+            <h2>Projetos Pessoais</h2>
+            <ul>
+                <li>Helpdesk interno com Spring Boot + React</li>
+                <li>Portais documentais e interativos com HTML5 + JS</li>
+                <li>Automatização com Python</li>
+                <li>Migração ERP - Programa Conecta</li>
+            </ul>
+        </section>
 
-            <li>
-                <strong>Projetos Pessoais e Freelance – Vários Clientes</strong><br>
-                <ul>
-                    <li>Desenvolvimento de Helpdesks internos</li>
-                    <li>Criação de portais de documentos com HTML5, CSS3 e JavaScript</li>
-                    <li>Automação de processos via scripts Python</li>
-                    <li>Desenvolvimento de portais com efeitos especiais em JavaScript</li>
-                    <li>Experimentos com MongoDB, React e APIs modernas</li>
-                </ul>
-            </li>
+        <section>
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li>Tecnólogo em Desenvolvimento de Sistemas</li>
+                <li>Pós-graduação em Sistemas Mobile Híbridos</li>
+                <li>Pós-graduação em Inteligência Artificial</li>
+            </ul>
+        </section>
 
-        </ul>
-    </section>
-    <section>
-        <h2>Projetos Pessoais e Iniciativas</h2>
-        <ul class="section-content">
-            <li>🛠️ Sistema de Helpdesk interno com Spring Boot + React</li>
-            <li>🛠️ Portal de informações e documentos corporativos com HTML5, JS e CSS3</li>
-            <li>🛠️ Migração de sistemas ERP - Programa Conecta</li>
-            <li>🛠️ Monitoramento de processos via Django e Python</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Português - Nativo</li>
+            </ul>
+        </section>
 
-    <section>
-        <h2>Formação Acadêmica</h2>
-        <ul class="section-content">
-            <li>🎓 Tecnólogo em Desenvolvimento de Sistemas</li>
-            <li>🎓 Pós-graduação em Desenvolvimento de Sistemas Mobile Híbridos</li>
-            <li>🎓 Pós-graduação em Inteligência Artificial (AI)</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Idiomas</h2>
-        <ul class="section-content">
-            <li>Português - Nativo</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Contato</h2>
-        <ul class="section-content">
-            <li>📧 Email: jorossini@gmail.com</li>
-            <li>🌐 GitHub: github.com/Josimesio</li>
-            <li>🌐 LinkedIn: linkedin.com/in/josimesio</li>
-        </ul>
-    </section>
-
-    <script>
-        const canvas = document.getElementById('matrixCanvas');
-        const ctx = canvas.getContext('2d');
-
-        let width = window.innerWidth;
-        let height = window.innerHeight;
-        canvas.width = width;
-        canvas.height = height;
-
-        let columns = Math.floor(width / 20);
-        let drops = new Array(columns).fill(1);
-
-        const characters = '01';
-
-        function drawMatrix() {
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-            ctx.fillRect(0, 0, width, height);
-
-            ctx.fillStyle = 'rgba(0,255,0,0.3)';
-            ctx.font = '16px monospace';
-
-            for (let i = 0; i < drops.length; i++) {
-                const text = characters.charAt(Math.floor(Math.random() * characters.length));
-                ctx.fillText(text, i * 20, drops[i] * 20);
-
-                if (drops[i] * 20 > height && Math.random() > 0.975) {
-                    drops[i] = 0;
-                }
-                drops[i]++;
-            }
-        }
-
-        setInterval(drawMatrix, 50);
-
-        window.addEventListener('resize', () => {
-            width = window.innerWidth;
-            height = window.innerHeight;
-            canvas.width = width;
-            canvas.height = height;
-            columns = Math.floor(width / 20);
-            drops = new Array(columns).fill(1);
-        });
-    </script>
-
+        <section>
+            <h2>Contato</h2>
+            <ul>
+                <li>Email: jorossini@gmail.com</li>
+                <li>GitHub: github.com/Josimesio</li>
+                <li>LinkedIn: linkedin.com/in/josimesio</li>
+            </ul>
+        </section>
+    </main>
 </body>
 
 </html>
